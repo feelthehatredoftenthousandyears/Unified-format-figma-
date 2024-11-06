@@ -1,0 +1,41 @@
+
+{
+  "name": "MyPlugin",
+  "id": "1298534083313715111",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": ["dev"],
+  "capabilities": ["codegen"],
+  "ui": "ui.html",
+  "codegenLanguages": [
+    {"label": "SCSS", "value": "scss"}
+  ],
+  "codegenPreferences": [
+    {
+      "itemType": "unit",
+      "scaledUnit": "Rem",
+      "defaultScaleFactor": 16,
+      "default": true
+    },
+    {
+      "itemType": "select",
+        "propertyName": "tabSize",
+        "label": "Tab Size",
+        "options": [
+          {"label": "2", "value": "2", "isDefault": true },
+          {"label": "4", "value": "4"},
+          {"label": "8", "value": "8"}
+        ]
+    },
+    {
+        "itemType": "action",
+        "propertyName": "showMore",
+        "label": "More settings..."
+    }
+  ],
+  "networkAccess": {
+    "allowedDomains": ["https://www.figma.com"],
+    "reasoning": "",
+    "devAllowedDomains": []
+  }
+}
